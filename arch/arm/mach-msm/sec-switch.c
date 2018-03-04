@@ -1792,8 +1792,8 @@ int max77888_muic_charger_cb(enum cable_type_muic cable_type)
 		}
 	}
 	previous_cable_type = cable_type;
-#endif
 skip:
+#endif
 #ifdef CONFIG_JACK_MON
 	jack_event_handler("charger", is_cable_attached);
 #endif
@@ -4321,4 +4321,3 @@ struct sm5504_platform_data sm5504_pdata = {
 
 };
 #endif /*End of SM5504 MUIC Callbacks*/
-
